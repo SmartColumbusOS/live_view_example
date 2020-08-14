@@ -1,0 +1,5 @@
+<section class="phx-hero">
+    <%= if @display_child do %>
+      <%= live_render @socket, DemoWeb.Child, id: :child_thing %>
+    <% end %>
+</section
